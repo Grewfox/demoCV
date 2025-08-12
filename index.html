@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- cài đặt bootstrap -->
+    <!-- bài này không sử dụng bootstrap, có class sử dụng trùng class trong bootstrap gây lỗi nên em xin ẩn phần bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/laptop.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- banner -->
+      <div class="banner">
+        <img src="/img/bgr.jpg" alt="background" />
+        <div class="banner-title">
+          <h1>Đinh Trung Kiên</h1>
+          <p>Full Stack Developer</p>
+        </div>
+      </div>
+      <!-- thanhnavbar -->
+      <div class="navbar">
+        <!-- ảnh avatar đặt absolute -->
+        <img id="avatarNB" src="img/default-avatar.webp" alt="" />
+        <!-- navbarmenu -->
+        <ul class="navbar-menu">
+          <li>
+            <i class="fa-solid fa-user"></i>
+            <a href="#"> Thông Tin</a>
+          </li>
+          <li><i class="fa-solid fa-file"></i><a href="#"> Lý lịch</a></li>
+          <li id="name-nav">
+            <p>Đinh Trung Kiên</p>
+            <p>Full Stack Developer</p>
+          </li>
+          <li><i class="fa-solid fa-envelope"></i><a href="#">Chứng Chỉ</a></li>
+          <li><i class="fa-solid fa-star"></i><a href="#">Dự Án</a></li>
+        </ul>
+      </div>
+      <div class="thongtincanhan">
+        <div class="muctieu">
+          <h1>Mục Tiêu Nghề Nghiệp</h1>
+          <p>
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNIX. Em mong muốn mình sẽ được làm việc với vị trí FullStack
+            Developer, có thể vận dụng những kiến thức đẫ được trau dồi và không
+            người học hỏi để phát triển bản thân, cũng như hoàn thành tốt nhất
+            công việc được giao
+          </p>
+        </div>
+        <div class="thongtin">
+          <h1>Thông Tin Cá Nhân</h1>
+          <div class="thongtincuakien hidden">
+            <p><b>Giới tính: </b>Nam</p>
+            <p><b>Ngày sinh: </b>29/10/2002</p>
+            <p><b>Điện thoại: </b>(+84) 3360160xxx</p>
+            <p><b>Email: </b>kiendtfx66565@funix.edu.vn</p>
+            <p><b>Địa chỉ: </b>Lê Đức Thọ, Nam Từ Liêm, Hà Nội</p>
+            <p><b>Webside: </b>http://abc.tech</p>
+
+            <div class="icon-tt">
+              <a href="">
+                <i class="fa-brands fa-twitter" style="color: #74c0fc"></i> </a
+              ><a href="">
+                <i class="fa-brands fa-facebook" style="color: #74c0fc"></i>
+              </a>
+              <a href=""
+                ><i
+                  class="fa-brands fa-google-plus-g"
+                  style="color: #74c0fc"
+                ></i
+              ></a>
+              <a href="">
+                <i class="fa-brands fa-linkedin-in" style="color: #74c0fc"></i>
+              </a>
+            </div>
+          </div>
+          <form action="" id="formthongtin">
+            <!-- checkValidity() trả về true khi input đang trống và không có required -->
+            <input
+              type="email"
+              id="emailthongtin"
+              placeholder="Enter Email"
+              required
+            /><br />
+            <label for="" id="textthongtin"
+              >Hãy nhập email để hiện thông tin</label
+            ><br />
+            <button class="submit-email">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="thongtinnghenghiep">
+        <!-- đặt class là tt cho các ô kinh nghiệm,học vấn, hoạt động vì các phần tử
+        cấu tạo giống nhau -->
+        <div class="tt kinhnghiem">
+          <div class="title">
+            <h2>Kinh nghiệm</h2>
+            <i class="fa-solid fa-briefcase fa-2xl"></i>
+          </div>
+          <!-- cấu tạo y hệt -->
+          <div class="cv--detail cv--1">
+            <div class="cv">
+              <h3>Công ty Y</h3>
+              <p class="timelinecv">05/2022 - <span id="now">Hiện tại</span></p>
+              <ul>
+                <li>Full Stack Developer</li>
+                <li>
+                  Xây dựng, phát tr3ển Webside dựa trên thiết kế và yêu cầu đã
+                  có
+                </li>
+                <li>
+                  Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL
+                </li>
+              </ul>
+            </div>
+            <div class="cv">
+              <h3>Công ty X</h3>
+              <p class="timelinecv">06/2021 - 04/2022</p>
+              <ul>
+                <p>Web Designer</p>
+                <li>Thiết kế Webside dựa trên yêu cầu của khách hàng</li>
+                <li>Sử dụng các công cụ: Figma, Canva, PTS.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="readmore btnrm1">
+              <p class="rm1"><i class="fa-solid fa-down-long"></i>  Read More</p>
+          </div>
+        </div>
+        <div class="tt hocvan">
+          <div class="title">
+            <h2>Học vấn</h2>
+            <i class="fa-solid fa-pen fa-2xl"></i>
+          </div>
+          <div class="cv--detail cv--2">
+            <div class="cv">
+              <h3>Funix</h3>
+              <p class="timelinecv">06/2021 - 05/2022</p>
+              <ul>
+                <li>Tốt nghiệp chứng chỉ doanh nghiệp nhánh FullStack</li>
+
+                <li>GPA: 9/10</li>
+              </ul>
+            </div>
+            <div class="cv">
+              <h3>Cử nhân - ĐH Công nghệ Đông Á</h3>
+              <p class="timelinecv">08/2020 - Hiện tại</p>
+              <ul>
+                <li>Chuyên ngành: Công nghệ thông tin</li>
+                <li>GPA: 2.8/4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="readmore btnrm2">
+            <p class="rm2"><i class="fa-solid fa-down-long"></i>  Read More</p>
+          </div>
+        </div>
+        <div class="tt hoatdong">
+          <div class="title">
+            <h2>Hoạt động</h2>
+            <i class="fa-solid fa-briefcase fa-2xl"></i>
+          </div>
+          <div class="cv--detail cv--3">
+            <div class="cv">
+              <h3>FPT Edu Hackathion 2019</h3>
+              <p class="timelinecv">03/2019 - 05/2019</p>
+              <ul>
+                <li>Giải 3 hạng A</li>
+                <li>Đề tài: Trang web về phân loại rác thải</li>
+              </ul>
+            </div>
+          </div>
+          <div class="readmore btnrm3">
+            <p class="rm3"><i class="fa-solid fa-down-long"></i>  Read More</p>
+          </div>
+        </div>
+        <div class="tt sothich">
+          <div class="title">
+            <h2>Sở thích</h2>
+            <i class="fa-solid fa-binoculars fa-2xl"></i>
+          </div>
+          <div class="cv--detail cv--4">
+            <div class="listsothich">
+              <ul>
+                <li class="lst">
+                  <i class="fa-solid fa-music"></i>
+                  <p>Âm Nhạc</p>
+                </li>
+                <li class="lst">
+                  <i class="fa-solid fa-plane"></i>
+                  <p>Du Lịch</p>
+                </li>
+                <li class="lst">
+                  <i class="fa-solid fa-gamepad"></i>
+                  <p>Chơi Game</p>
+                </li>
+                <li class="lst">
+                  <i class="fa-solid fa-utensils"></i>
+                  <p>Ăn Uống</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="readmore btnrm4">
+            <p class="rm4"><i class="fa-solid fa-down-long"></i>  Read More</p>
+          </div>
+        </div>
+        <div class="tt kynang">
+          <div class="title">
+            <h2>Kỹ năng</h2>
+            <i class="fa-solid fa-screwdriver-wrench fa-2xl"></i>
+          </div>
+          <div class="cv--detail cv--5">
+            <div class="skill">
+              <div class="detail-skill html">
+                <h3>HTML/CSS: Fundamental</h3>
+                <!-- Tạo các ô trống để tô màu điểm -->
+                <div class="diem">
+                  <div class="score mot"></div>
+                  <div class="score hai"></div>
+                  <div class="score ba"></div>
+                </div>
+              </div>
+              <div class="detail-skill js">
+                <h3>Javascipt: Intermediate</h3>
+                <div class="diem">
+                  <div class="score mot"></div>
+                  <div class="score hai"></div>
+                  <div class="score ba"></div>
+                </div>
+              </div>
+              <div class="detail-skill nodejs">
+                <h3>HTML/CSS: NodeJS: Intermediate</h3>
+                <div class="diem">
+                  <div class="score mot"></div>
+                  <div class="score hai"></div>
+                  <div class="score ba"></div>
+                </div>
+              </div>
+              <div class="detail-skill bs">
+                <h3>Bootstrap 5: Fundamental</h3>
+                <div class="diem">
+                  <div class="score mot"></div>
+                  <div class="score hai"></div>
+                  <div class="score ba"></div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          <div class="readmore btnrm5">
+            <p class="rm5"><i class="fa-solid fa-down-long"></i>  Read More</p>
+          </div>
+        </div>
+        <div class="tt ngonngu">
+          <div class="title">
+            <h2>Ngôn ngữ</h2>
+            <i class="fa-solid fa-globe fa-2xl"></i>
+          </div>
+          <div class="cv--detail cv--6">
+            <div class="detail-skill en">
+              <h3>Tiếng Anh</h3>
+              <div class="diem">
+                <div class="score mot"></div>
+                <div class="score hai"></div>
+                <div class="score ba"></div>
+              </div>
+            </div>
+          </div>
+          <div class="readmore btnrm6">
+            <p class="rm6"><i class="fa-solid fa-down-long"></i>  Read More</p>
+          </div>
+        </div>
+      </div>
+      <!-- chứng chỉ -->
+      <div class="chungchigiaithuong">
+        <h1>Chứng chỉ - Giải thưởng</h1>
+        <div class="chungchi laptrinhweb">
+          <img src="img/cc.jpg" alt="chứng chỉ ltw" />
+          <div class="ttchungchi">
+            <h4>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</h4>
+            <ul>
+              <li>Chứng chỉ thuộc chương trình CCDN</li>
+              <li>GPA:</li>
+            </ul>
+          </div>
+        </div>
+        <div class="chungchi laptrinhjs">
+          <img src="img/cc.jpg" alt="chứng chỉ ltw" />
+          <div class="ttchungchi">
+            <h4>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</h4>
+            <ul>
+              <li>Chứng chỉ thuộc chương trình CCDN</li>
+              <li>GPA:</li>
+            </ul>
+          </div>
+        </div>
+        <div class="chungchi dtb">
+          <img src="img/cc.jpg" alt="chứng chỉ ltw" />
+          <div class="ttchungchi">
+            <h4>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</h4>
+            <ul>
+              <li>Chứng chỉ thuộc chương trình CCDN</li>
+              <li>GPA:</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Dự án -->
+      <div class="duancuak">
+        <h1 id="titleda">Dự án</h1>
+        <div class="duan cvcanhan">
+          <img src="img/project_1.png" alt="" />
+          <div class="tenduan">
+            <h3>CV CÁ NHÂN</h3>
+          </div>
+          <div class="timeduan">
+            <ul class="combo3">
+              <li class="item item-1 timeda">2021</li>
+              <li class="item item-2">
+                <p><i class="fa-solid fa-user"></i> FUNiX</p>
+              </li>
+              <li class="item item-3">
+                <p><i class="fa-regular fa-lightbulb"></i> Developer</p>
+              </li>
+            </ul>
+          </div>
+          <table>
+            <tr>
+              <th>Mô tả</th>
+              <td>Trang WEB</td>
+            </tr>
+            <tr>
+              <th>Nhiệm vụ</th>
+              <td>Làm trang WEB</td>
+            </tr>
+            <tr>
+              <th>Công nghệ</th>
+              <td>HTML, CSS, JS</td>
+            </tr>
+          </table>
+        </div>
+        <div class="duan cvcanhan">
+          <img src="img/project_2.png" alt="" />
+          <div class="tenduan">
+            <h3>TRANG WEB QUẢN LÝ THÚ CƯNG</h3>
+          </div>
+          <div class="timeduan">
+            <ul class="combo3">
+              <li class="timeda item-1">2021</li>
+              <li class="item item-2">
+                <p><i class="fa-solid fa-user"></i> FUNiX</p>
+              </li>
+              <li class="item item-3">
+                <p><i class="fa-regular fa-lightbulb"></i> Developer</p>
+              </li>
+            </ul>
+          </div>
+          <table>
+            <tr>
+              <th>Mô tả</th>
+              <td>Trang WEB</td>
+            </tr>
+            <tr>
+              <th>Nhiệm vụ</th>
+              <td>Làm trang WEB</td>
+            </tr>
+            <tr>
+              <th>Công nghệ</th>
+              <td>HTML, CSS, JS</td>
+            </tr>
+          </table>
+        </div>
+        <div class="duan cvcanhan">
+          <img src="img/project_3.png" alt="" />
+          <div class="tenduan">
+            <h3>TRANG WEB XEM TIN TỨC</h3>
+          </div>
+          <div class="timeduan">
+            <ul class="combo3">
+              <li class="timeda item-1">2021</li>
+              <li class="item itcssem-2">
+                <p><i class="fa-solid fa-user"></i> FUNiX</p>
+              </li>
+              <li class="item item-3">
+                <p><i class="fa-regular fa-lightbulb"></i> Developer</p>
+              </li>
+            </ul>
+          </div>
+          <table>
+            <tr>
+              <th>Mô tả</th>
+              <td>Trang WEB</td>
+            </tr>
+            <tr>
+              <th>Nhiệm vụ</th>
+              <td>Làm trang WEB</td>
+            </tr>
+            <tr>
+              <th>Công nghệ</th>
+              <td>HTML, CSS, JS</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- liên hệ -->
+      <div class="lienhe">
+        <ul>
+          <li>
+            <i class="fa-brands fa-facebook" style="color: #74c0fc"></i
+            ><a href="#">Facebook</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-linkedin" style="color: #74c0fc"></i>
+            <a href="#">Linkedin</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-github" style="color: #74c0fc"></i
+            ><a href="#">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
