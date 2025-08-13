@@ -71,16 +71,9 @@
     grid-row:2 ;
 }
   .readmore{
-    text-transform: uppercase;
-    margin-left: 20px;
-    font-size: 12px;
-    padding: 3px 15px;
-    background-color: #d6c08d;
-    display: inline-block;
-    border-radius: 20px;
-    cursor: pointer;
     display: none;
-    position: absolute;
-    bottom: 20px;
+}
+.thongtinnghenghiep .tt:hover .readmore{
+    display: none;
 }
 }

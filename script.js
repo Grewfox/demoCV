@@ -14,6 +14,15 @@ document
       textThongTin.style.color = "red";
     }
   });
+function hideOnDesktop() {
+  if (window.innerWidth > 1280) {
+    document.querySelectorAll(".cv--detail").forEach((el) => el.classList.add("hidden"));
+    console.log("Desktop > 1224px");
+  }
+}
+
+window.addEventListener("resize", hideOnDesktop);
+hideOnDesktop();
 //reset text
 document.querySelector("#emailthongtin").addEventListener("click", function () {
   if ((textThongTin.textContent = "Định dạng email không hợp lệ, nhập lại!!")) {
@@ -21,9 +30,7 @@ document.querySelector("#emailthongtin").addEventListener("click", function () {
     textThongTin.style.color = "black";
   }
 });
-document
-  .querySelectorAll(".cv--detail")
-  .forEach((el) => el.classList.add("hidden"));
+
 const rmRead = document.querySelectorAll(".readmore");
 const cvRead = document.querySelector(".cv--detail");
 document.querySelector(".rm1").addEventListener("click", function () {
