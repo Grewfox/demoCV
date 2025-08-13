@@ -15,10 +15,14 @@ document
     }
   });
 function hideOnDesktop() {
-  if (window.innerWidth > 1280) {
-    document.querySelectorAll(".cv--detail").forEach((el) => el.classList.add("hidden"));
-    console.log("Desktop > 1224px");
-  }
+  document.querySelectorAll('.cv--detail').forEach(el => {
+    if(window.innerWidth > 800){
+      el.classList.add('hidden');
+    }
+    else{
+      el.classList.remove('hidden')
+    }
+})
 }
 
 window.addEventListener("resize", hideOnDesktop);

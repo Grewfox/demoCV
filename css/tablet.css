@@ -1,12 +1,12 @@
-@media screen and (max-width: 1024px) and (min-width: 801px){
-    .container{
+@media screen and (max-width: 1024px) and (min-width: 801px) {
+  .container {
     max-width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     font-size: 14px;
-    padding: 0 20px 0 20px
-    }
-      .banner-title {
+    padding: 0 20px 0 20px;
+  }
+  .banner-title {
     position: absolute;
     top: 30%;
     right: 50%;
@@ -20,7 +20,7 @@
   #avatarNB {
     display: none;
   }
-  .thongtinnghenghiep{
+  .thongtinnghenghiep {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -29,51 +29,45 @@
     margin-top: 56px;
     margin-bottom: 56px;
     line-height: 30px;
-    align-self: start
-}
-.thongtinnghenghiep .tt{
+    align-self: start;
+  }
+  .thongtinnghenghiep .tt {
     padding: 15px 15px 50px 15px;
-    border: 1px solid rgba(0,0,0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 0;
-}
-.diem{
+  }
+  .diem {
     display: flex;
     justify-content: flex-start;
     gap: 5px;
-}
-.score{
+  }
+  .score {
     width: 100px;
     height: 4px;
     background-color: #a4a4a4;
     border-radius: 5px;
-}
-.timeda{
-  padding: 10px;
-}
-/* Căn chỉnh phần layout combo3(dự án)  */
-.combo3{
+  }
+  .timeda {
+    padding: 10px;
+  }
+  /* Căn chỉnh phần layout combo3(dự án)  */
+  .combo3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
     align-items: center;
-}
-.item-1{
+  }
+  .item-1 {
     grid-column: 1;
     grid-row: 1 / span 2;
-}
-.item-2{
+  }
+  .item-2 {
     grid-column: 2;
     grid-row: 1;
-}
-.item-3{
-    grid-column:2 ;
-    grid-row:2 ;
-}
-  .readmore{
-    display: none;
-}
-.thongtinnghenghiep .tt:hover .readmore{
-    display: none;
-}
+  }
+  .item-3 {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
